@@ -1,0 +1,21 @@
+[package]
+name = "rwtypes"
+version = "0.1.0"
+edition = "2021"
+description = "Adds methods to read/write binary numbers to the Read and Write traits"
+authors = ["zeozeozeo"]
+documentation = "https://docs.rs/rwtypes"
+homepage = "https://github.com/zeozeozeo/rwtypes"
+readme = "README.md"
+license = "Unlicense"
+keyword = ["numbers", "binary", "file", "read", "write", "number", "reader", "writer"]
+categories = ["rust-patterns", "filesystem"]
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[features]
+default = ["impl"]
+impl = [] # includes implementations for WriterTypes and ReaderTypes
+
+[dependencies]
